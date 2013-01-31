@@ -1,0 +1,281 @@
+﻿.groupeditemspage section[role=main] {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+}
+
+.groupeditemspage .groupeditemslist {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+    /* This selector is used to prevent ui-dark/light.css from overwriting changes
+       to .win-surface. */
+    .groupeditemspage .groupeditemslist .win-horizontal.win-viewport .win-surface {
+        margin-bottom: 60px;
+        margin-left: 45px;
+        margin-right: 115px;
+        margin-top: 128px;
+    }
+
+    .groupeditemspage .groupeditemslist .win-groupheader {
+        padding: 0;
+    }
+
+    /* Use grid and top level layout for truncation */
+    .groupeditemspage .groupeditemslist .group-header {
+        -ms-grid-columns: minmax(0, max-content) 7px max-content;
+        -ms-grid-rows: max-content;
+        display: -ms-inline-grid;
+        line-height: 1.5;
+    }
+
+    /* Override default button styles */
+    .groupeditemspage .groupeditemslist .group-header, .group-header:hover, .group-header:hover:active {
+        background: transparent;
+        border: 0;
+        margin-bottom: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 1px;
+        min-height: 0;
+        padding: 0;
+    }
+
+        .groupeditemspage .groupeditemslist .group-header .group-title {
+            display: inline-block;
+        }
+
+        .groupeditemspage .groupeditemslist .group-header .group-chevron {
+            -ms-grid-column: 3;
+            display: inline-block;
+        }
+
+            .groupeditemspage .groupeditemslist .group-header .group-chevron::before {
+                content: "\E26B";
+                font-family: 'Segoe UI Symbol';
+            }
+
+    /*.groupeditemspage .groupeditemslist .item {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 90px;
+        display: -ms-grid;
+        height: 250px;
+        width: 250px;
+    }*/
+
+        .groupeditemspage .groupeditemslist .item .item-image {
+            -ms-grid-row-span: 2;
+        }
+
+        .groupeditemspage .groupeditemslist .item .item-overlay {
+            -ms-grid-row: 2;
+            -ms-grid-rows: 1fr 21px;
+            display: -ms-grid;
+            padding: 6px 15px 2px 15px;
+            margin-top: -25px;
+        }
+
+            .groupeditemspage .groupeditemslist .item .item-overlay .item-title {
+                -ms-grid-row: 1;
+                overflow: hidden;
+                width: 100%;
+            }
+
+            .groupeditemspage .groupeditemslist .item .item-overlay .item-subtitle {
+                -ms-grid-row: 2;
+                width: 220px;
+            }
+
+.groupeditemspage {
+    /* Change the display type to have only one row */
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+
+    .groupeditemspage header[role=banner] {
+        /* Position this at the top of the screen */
+        -ms-grid-row: 1;
+        -ms-grid-columns: 120px 1fr;
+        display: -ms-grid;
+    }
+
+    .groupeditemspage section[role=main] {
+        /* Position this at the top of the screen */
+        -ms-grid-row: 1;
+        height: 100%;
+        width: 100%;
+    }
+
+.sezoDiv {
+    height: 100%;
+    width: 100%;
+}
+
+.groupeditemspage .groupeditemslist .win-horizontal.win-viewport .win-surface {
+    margin-left: 45px;
+    /* Add the following line. */
+    margin-top: 133px;
+    margin-bottom: 60px;
+}
+
+/* Add the following lines near the end of the CSS file. */
+.groupeditemspage .groupeditemslistZoomOut .win-horizontal.win-viewport .win-surface {
+    margin-left: 116px;
+    margin-top: 133px;
+}
+
+.groupeditemspage .groupeditemslistZoomOut .win-item {
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr 90px;
+    display: -ms-grid;
+    height: 250px;
+    width: 250px;
+}
+
+.groupeditemspage .groupeditemslistZoomOut .win-item {
+    -ms-grid-rows: 1fr 180px;
+    display: -ms-grid;
+    height: 580px;
+    width: 250px;
+}
+
+.smallitemtemplate .item
+{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 0px 1fr;
+    display: -ms-grid;
+}
+
+.groupeditemspage .groupeditemslist .smallitemtemplate .item .item-overlay .item-title {
+    position: absolute; 
+    padding-right: 6px;
+    bottom: 10px;
+    font-size: 16pt; 
+}
+.smallitemtemplate .item-overlay .item-subtitle {
+    display: none;
+}
+.groupeditemspage .mediumitemtemplate .item
+{
+    width: 310px;
+    height: 150px;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr 60px;
+    display: -ms-grid;
+    overflow: hidden;
+}       
+.groupeditemspage .largeitemtemplate .item
+{
+    width: 630px;
+    height: 470px;
+    overflow: hidden;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr 90px;
+    display: -ms-grid;
+}
+
+
+
+@media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {
+    .groupeditemspage .groupeditemslist .item .item-overlay {
+        background: rgba(0,0,0,0.65);
+    }
+
+        .groupeditemspage .groupeditemslist .item .item-overlay .item-title {
+            color: rgba(255,255,255,0.87);
+        }
+
+        .groupeditemspage .groupeditemslist .item .item-overlay .item-subtitle {
+            color: rgba(255,255,255,0.6);
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) and (-ms-high-contrast), screen and (-ms-view-state: fullscreen-portrait) and (-ms-high-contrast), screen and (-ms-view-state: filled) and (-ms-high-contrast) {
+    .groupeditemspage .groupeditemslist .item .item-overlay {
+        color: WindowText;
+    }
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .groupeditemspage section[role=main] {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+    }
+
+    .groupeditemspage .groupeditemslist .win-vertical.win-viewport .win-surface {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .groupeditemspage .groupeditemslist .win-container {
+        margin-bottom: 15px;
+        margin-left: 13px;
+        margin-right: 35px;
+        padding: 7px;
+    }
+
+    .groupeditemspage .groupeditemslist .item {
+        -ms-grid-columns: 60px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+        height: 60px;
+        width: 272px;
+    }
+
+        .groupeditemspage .groupeditemslist .item .item-image {
+            -ms-grid-column: 1;
+            -ms-grid-row-span: 1;
+            height: 60px;
+            width: 60px;
+        }
+
+        .groupeditemspage .groupeditemslist .item .item-overlay {
+            -ms-grid-column: 2;
+            -ms-grid-row: 1;
+            -ms-grid-row-align: stretch;
+            background: transparent;
+            display: inline-block;
+            margin-left: 10px;
+            padding: 0;
+        }
+
+            .groupeditemspage .groupeditemslist .item .item-overlay .item-title {
+                margin-top: 4px;
+                max-height: 40px;
+                width: 202px;
+            }
+
+            .groupeditemspage .groupeditemslist .item .item-overlay .item-subtitle {
+                opacity: 0.6;
+                width: 202px;
+            }
+
+    .groupeditemspage header[role=banner] {
+        -ms-grid-columns: auto 1fr;
+        margin-left: 20px;
+    }
+
+    .groupeditemspage .groupeditemslist .win-vertical.win-viewport .win-surface {
+        margin-bottom: 30px;
+        /* Add the following line. */
+        margin-top: 133px;
+        margin-left: 6px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .groupeditemspage .groupeditemslist .win-horizontal.win-viewport .win-surface {
+        margin-left: 25px;
+    }
+
+    .groupeditemspage .groupeditemslistZoomOut .win-horizontal.win-viewport .win-surface {
+        margin-left: 96px;
+    }
+}
