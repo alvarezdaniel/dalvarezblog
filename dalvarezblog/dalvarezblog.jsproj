@@ -49,6 +49,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <PackageCertificateKeyFile>dalvarezblog_StoreKey.pfx</PackageCertificateKeyFile>
     <PackageCertificateThumbprint>6975E787C41E44D898E8AE11BDC783D392197175</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -60,6 +61,7 @@
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
+    <Content Include="images\widelogo.scale-100.png" />
     <Content Include="js\data.js" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />

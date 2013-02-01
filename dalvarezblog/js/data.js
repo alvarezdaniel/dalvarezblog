@@ -2,7 +2,11 @@
     "use strict";
 
     var feeds = [
-            { key: "group1", url: 'http://blog.alvarezdaniel.com.ar/feeds/posts/default', logoUrl: 'http://lh4.googleusercontent.com/-_ajlRki8lK4/AAAAAAAAAAI/AAAAAAAAb7E/JPj73J5Jm7k/s512-c/photo.jpg' }
+            {
+                key: "group1",
+                url: 'http://blog.alvarezdaniel.com.ar/feeds/posts/default',
+                logoUrl: 'http://tensaiweb.info/images/rss_orange.png'
+            }
    ];
 
     var blogPosts = new WinJS.Binding.List();
@@ -65,7 +69,7 @@
     };
 
     function ShowConnectionError() {
-        var popup = Windows.UI.Popups.MessageDialog("Ha habido un error intentando acceder a los nuevos datos o no hay conexiones de red disponibles.\nPor favor asegúrese de contar con acceso de red y vuelva a abrir la aplicación.", "Sin conexión");
+        var popup = Windows.UI.Popups.MessageDialog("Error accessing data.\nPlease insure network connection and retry.", "No connection");
         popup.showAsync();
     }
 
@@ -79,7 +83,7 @@
             var date = ds.substring(5, 7) + "-" + ds.substring(8, 10) + "-" + ds.substring(0, 4);
             var author = articleSyndication.querySelector(
                 "author > name").textContent;
-            feed.description = "Por " + author + " actualizado " + date;
+            feed.description = "By " + author + " updated " + date;
             feed.subtitle = articleSyndication.querySelector("feed > title").textContent;
 
             feed.itemsName = "entry";
@@ -93,7 +97,7 @@
 
             if (ds != null && ds != undefined) {
                 var date = ds.substring(5, 7) + "-" + ds.substring(8, 11) + "-" + ds.substring(12, 16);
-                feed.description = "Actualizado " + date;
+                feed.description = "Updated " + date;
             } else
                 feed.description = "";
 
