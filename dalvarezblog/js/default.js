@@ -40,7 +40,7 @@
     });
 
     app.onsettings = function (e) {
-        e.detail.applicationcommands = { "about": { title: "About...", href: "/pages//about.html" } };
+        e.detail.applicationcommands = { "about": { title: "Acerca de...", href: "/pages//about.html" } };
         WinJS.UI.SettingsFlyout.populateSettings(e);
     };
 
@@ -56,13 +56,13 @@
         var pinGroup = document.getElementById("pinGroup").winControl;
 
         if (Windows.UI.StartScreen.SecondaryTile.exists(appbarTileId)) {
-            pinGroup.label = "Unpin ";
+            pinGroup.label = "Desanclar";
             pinGroup.icon = WinJS.UI.AppBarIcon.unpin;
-            pinGroup.tooltip = "Unpin";
+            pinGroup.tooltip = "Desanclar";
         } else {
-            pinGroup.label = "Pin";
+            pinGroup.label = "Anclar";
             pinGroup.icon = WinJS.UI.AppBarIcon.pin;
-            pinGroup.tooltip = "Pin";
+            pinGroup.tooltip = "Anclar";
         }
 
     };

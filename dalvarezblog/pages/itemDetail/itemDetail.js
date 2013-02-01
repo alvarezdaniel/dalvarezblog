@@ -23,7 +23,7 @@
             element.querySelector(".titlearea .pagetitle").textContent = item.group.title;
             element.querySelector("article .item-title").textContent = item.title;
             element.querySelector("article .item-subtitle").textContent = item.pubDate;
-            element.querySelector("article .item-link").attributes.href.value = item.link;
+            //element.querySelector("article .item-link").attributes.href.value = item.link;
             element.querySelector("article .item-content").innerHTML = item.content;
             element.querySelector(".content").focus();
 

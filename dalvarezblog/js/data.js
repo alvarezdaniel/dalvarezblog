@@ -69,7 +69,7 @@
     };
 
     function ShowConnectionError() {
-        var popup = Windows.UI.Popups.MessageDialog("Error accessing data.\nPlease insure network connection and retry.", "No connection");
+        var popup = Windows.UI.Popups.MessageDialog("Error accediendo a los datos.\nPor favor asegurese de tener conexion a internet y reintente.", "No hay conexion");
         popup.showAsync();
     }
 
@@ -83,7 +83,7 @@
             var date = ds.substring(5, 7) + "-" + ds.substring(8, 10) + "-" + ds.substring(0, 4);
             var author = articleSyndication.querySelector(
                 "author > name").textContent;
-            feed.description = "By " + author + " updated " + date;
+            feed.description = "Por " + author + " actualizado " + date;
             feed.subtitle = articleSyndication.querySelector("feed > title").textContent;
 
             feed.itemsName = "entry";
@@ -97,7 +97,7 @@
 
             if (ds != null && ds != undefined) {
                 var date = ds.substring(5, 7) + "-" + ds.substring(8, 11) + "-" + ds.substring(12, 16);
-                feed.description = "Updated " + date;
+                feed.description = "Actualizado " + date;
             } else
                 feed.description = "";
 

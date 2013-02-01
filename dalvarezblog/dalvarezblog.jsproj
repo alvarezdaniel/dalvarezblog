@@ -46,7 +46,7 @@
   <PropertyGroup>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
-    <DefaultLanguage>en-US</DefaultLanguage>
+    <DefaultLanguage>es-AR</DefaultLanguage>
     <PackageCertificateKeyFile>dalvarezblog_StoreKey.pfx</PackageCertificateKeyFile>
     <PackageCertificateThumbprint>6975E787C41E44D898E8AE11BDC783D392197175</PackageCertificateThumbprint>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>

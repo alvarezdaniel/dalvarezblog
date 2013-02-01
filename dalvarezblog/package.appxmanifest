@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="59191dalvarez.dalvarezblog" Version="1.0.0.1" Publisher="CN=979E6971-D3F7-4052-B648-4999CC84F767" />
+  <Identity Name="59191dalvarez.dalvarezblog" Version="1.0.0.2" Publisher="CN=979E6971-D3F7-4052-B648-4999CC84F767" />
   <Properties>
     <DisplayName>dalvarezblog</DisplayName>
     <PublisherDisplayName>dalvarez</PublisherDisplayName>

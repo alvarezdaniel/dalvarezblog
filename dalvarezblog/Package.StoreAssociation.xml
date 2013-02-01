@@ -346,5 +346,10 @@
     <MainPackageIdentityName>59191dalvarez.App5Estrellas</MainPackageIdentityName>
     <MainPackageIdentityName>59191dalvarez.PPT</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/feb461ce-2ada-4d7b-805f-46915622b634" />
+  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/feb461ce-2ada-4d7b-805f-46915622b634">
+    <PackageInfo>
+      <PackageArchitecture>neutral</PackageArchitecture>
+      <PackageMaxArchitectureVersion>1.0.0.1</PackageMaxArchitectureVersion>
+    </PackageInfo>
+  </PackageInfoList>
 </StoreAssociation>
